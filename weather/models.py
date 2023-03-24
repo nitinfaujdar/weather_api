@@ -27,8 +27,8 @@ class User(AbstractUser):
 
 # for demo weather data
 class Weather(models.Model):
-    country = models.CharField(_('Shop Name'),max_length=50,null=True,blank=True)
-    city = models.CharField(_('Address'),max_length=155,null=True,blank=True)
+    country = models.CharField(max_length=50,null=True,blank=True)
+    city = models.CharField(max_length=155,null=True,blank=True)
     temperature = models.CharField(max_length=25,null=True,blank=True)
     monday = models.CharField(null=False, blank=True, max_length=150)
     tuesday = models.CharField(null=False, blank=True, max_length=150)
